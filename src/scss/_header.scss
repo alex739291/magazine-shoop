@@ -6,15 +6,15 @@ $break-large: 1024px;
     ul{
       list-style: none;
       @media screen and (min-width: $break-large){
-        list-style: none;
-
+        //list-style: none;
       }
       li{
         @media screen and (min-width: $break-large){
-          float: left;
-          margin-right: 15px;
+
+
         }
         a{
+          color: #888;
           @media screen and (min-width: $break-large) {
             color: #888;
           }
@@ -24,12 +24,19 @@ $break-large: 1024px;
   }
   .top-panel-left{
     height: 30px;
-    text-align: right;
-    a{
-      color: #888;
-      padding-left: 10px;
+    .nav{
+      a{
+        color: #888;
+      }
+      @media screen and (min-width: $break-large) {
+        float: right;
+        li{
+          a{
+            color: #888;
+          }
+        }
+      }
     }
-
   }
 }
 
@@ -37,6 +44,58 @@ header{
   height: 200px;
   .bottom-panel{
     margin-top: 20px;
+  }
+  .logo{
+    height: 100px;
+    .brand{
+      line-height: 100px;
+    }
+    .name-site{
+      border-left: 1px solid #000000;
+      height: 100px;
+      padding-top: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      color: #888;
+
+
+    }
+  }
+  .contact-us{
+    height: 100px;
+    .button-contact{
+      height: 100px;
+      padding-top: 30px;
+      button{
+        height: 40px;
+        width: 100%;
+        color: #585f69;
+        &:hover{
+          background: #585f69;
+          color: #fff;
+          border: none;
+        }
+      }
+    }
+    .adress-contact{
+      span{
+        font-size: 16px;
+        font-weight: 600;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+      p{
+        color: #888;
+        a{
+          color: #888;
+          text-decoration: underline;
+          &:hover{
+            color: #000;
+          }
+        }
+      }
+    }
   }
   .shoping-areea{
     margin-top: 20px;
@@ -59,7 +118,6 @@ header{
           }
         }
       }
-
     }
     .basket{
       @extend .favorite;

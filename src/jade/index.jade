@@ -2,8 +2,8 @@ extends layouts/main.jade
 block content
     main
         .container
-            .row
-                .top-panel.col-xs-12
+            .top-panel.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                .row
                     .top-panel-right.col-xs-4.col-sm-6.col-md-6
                         include ./include/_lg
                         nav.navbar.hidden-lg.hidden-md
@@ -32,44 +32,62 @@ block content
                                             li
                                                 a(href="#") Контакты
                     .top-panel-left.col-xs-8.col-sm-6.col-md-6
-                        span.hidden-xs Ваш город :
-                        a.dropdown-toggle.hidden-xs(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") >
-                        ul.dropdown-menu
+                        ul.nav.nav-pills.hidden-xs
+                            li.hidden-xs.hidden-sm
+                                a(href="#") Скачать файл PDF
                             li
-                                a(href="#") Абаза
-                            li.divider
+                                a.dropdown-toggle.hidden-xs(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Ваш город : >
+                                ul.dropdown-menu
+                                    li
+                                        a(href="#") Абаза
+                                    li.divider
+                                    li
+                                        a(href="#") Абдулино
+                                    li.divider
+                                    li
+                                        a(href="#") Абдубинск
+                                    li.divider
+                                    li
+                                        a(href="#") Агидель
+                                    li.divider
+                                    li
+                                        a(href="#") Все города
                             li
-                                a(href="#") Абдулино
-                            li.divider
+                                a(href="#") Вход
                             li
-                                a(href="#") Абдубинск
-                            li.divider
-                            li
-                                a(href="#") Агидель
-                            li.divider
-                                li
-                                    a(href="#") Все города
-                        a(href="#") Вход
-                        a(href="#") Регистрация
-            header.row
-                .bottom-panel.col-xs-12.col-sm-5
-                    a(href="index.html")
-                        img(src="images/Снимок.PNG")
-                .shoping-areea.col-xs-12.col-sm-7
-                    .favorite.col-xs-3.col-sm-6
-                        .box
-                            a(href="#")
-                                img(src="images/heart.PNG" alt="favorite")
-                                div.hidden-xs.favorite-info Избранное
-                                div.hidden-xs.description
-                                    span 0
-                                    span Товаров
-                    .basket.col-xs-3.col-sm-6
-                        .box
-                            a(href="#")
-                                img(src="images/basket.PNG" alt="basket")
-                                div.hidden-xs.favorite-info Корзина
-                                div.hidden-xs.description Корзина пуста
+                                a(href="#") Регистрация
+            header
+                .bottom-panel.col-xs-12.col-sm-12.col-lg-12
+                    .row
+                        .logo.col-xs-12.col-sm-5.col-md-5.col-lg-5
+                            .brand.col-lg-8.col-md-9
+                                a(href="index.html")
+                                    img(src="images/Снимок.PNG")
+                            .name-site.col-lg-4.col-md-3.hidden-xs.hidden-sm
+                                p Интернет магазин одежды
+                        .contact-us.hidden-xs.hidden-sm.col-md-4.col-lg-4
+                            .button-contact.col-lg-7
+                                button Свяжытесь с нами
+                            .adress-contact.col-lg-5
+                                span 8 495 212 85 06
+                                p г. Моска, ул.Егорова 2
+                                p Email:
+                                    a(href="#") info@redsign.ru
+                        .shoping-areea.col-xs-12.col-sm-7.col-lg-3
+                            .favorite.col-xs-3.col-sm-6
+                                .box
+                                    a(href="#")
+                                        img(src="images/heart.PNG" alt="favorite")
+                                        div.hidden-xs.favorite-info Избранное
+                                        div.hidden-xs.description
+                                            span 0
+                                            span Товаров
+                            .basket.col-xs-3.col-sm-6
+                                .box
+                                    a(href="#")
+                                        img(src="images/basket.PNG" alt="basket")
+                                        div.hidden-xs.favorite-info Корзина
+                                        div.hidden-xs.description Корзина пуста
 
 
 

@@ -13,13 +13,15 @@
   <body>
     <main>
       <div class="container">
-        <div class="row">
-          <div class="top-panel col-xs-12">
+        <div class="top-panel col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="row">
             <div class="top-panel-right col-xs-4 col-sm-6 col-md-6">
-              <nav class="navbar hidden-sm hidden-xs navbar-menu">
-                <ul>
+              <nav class="navbar hidden-sm hidden-xs">
+                <ul class="nav nav-pills">
                   <li><a href="#">О компании</a></li>
+                  <li class="divider"></li>
                   <li><a href="#">Каталог продукции</a></li>
+                  <li class="divider"></li>
                   <li><a href="#">Услуги и сервис</a></li>
                   <li class="dropdown"><a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">Еще...</a>
                     <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
@@ -55,34 +57,58 @@
                 </ul>
               </nav>
             </div>
-            <div class="top-panel-left col-xs-8 col-sm-6 col-md-6"><span class="hidden-xs">Ваш город :</span><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle hidden-xs">></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Абаза</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Абдулино</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Абдубинск</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Агидель</a></li>
-                <li class="divider">
-                  <li><a href="#">Все города</a></li>
+            <div class="top-panel-left col-xs-8 col-sm-6 col-md-6">
+              <ul class="nav nav-pills hidden-xs">
+                <li class="hidden-xs hidden-sm"><a href="#">Скачать файл PDF</a></li>
+                <li><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle hidden-xs">Ваш город : ></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Абаза</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Абдулино</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Абдубинск</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Агидель</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Все города</a></li>
+                  </ul>
                 </li>
-              </ul><a href="#">Вход</a><a href="#">Регистрация</a>
+                <li><a href="#">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+              </ul>
             </div>
           </div>
         </div>
-        <header class="row">
-          <div class="bottom-panel col-xs-12 col-sm-5"><a href="index.html"><img src="images/Снимок.PNG"></a></div>
-          <div class="shoping-areea col-xs-12 col-sm-7">
-            <div class="favorite col-xs-3 col-sm-6">
-              <div class="box"><a href="#"><img src="images/heart.PNG" alt="favorite">
-                  <div class="hidden-xs favorite-info">Избранное</div>
-                  <div class="hidden-xs description"><span>0</span><span>Товаров</span></div></a></div>
-            </div>
-            <div class="basket col-xs-3 col-sm-6">
-              <div class="box"><a href="#"><img src="images/basket.PNG" alt="basket">
-                  <div class="hidden-xs favorite-info">Корзина</div>
-                  <div class="hidden-xs description">Корзина пуста</div></a></div>
+        <header>
+          <div class="bottom-panel col-xs-12 col-sm-12 col-lg-12">
+            <div class="row">
+              <div class="logo col-xs-12 col-sm-5 col-md-5 col-lg-5">
+                <div class="brand col-lg-8 col-md-9"><a href="index.html"><img src="images/Снимок.PNG"></a></div>
+                <div class="name-site col-lg-4 col-md-3 hidden-xs hidden-sm">
+                  <p>Интернет магазин одежды</p>
+                </div>
+              </div>
+              <div class="contact-us hidden-xs hidden-sm col-md-4 col-lg-4">
+                <div class="button-contact col-lg-7">
+                  <button>Свяжытесь с нами</button>
+                </div>
+                <div class="adress-contact col-lg-5"><span>8 495 212 85 06</span>
+                  <p>г. Моска, ул.Егорова 2</p>
+                  <p>Email:<a href="#">info@redsign.ru</a></p>
+                </div>
+              </div>
+              <div class="shoping-areea col-xs-12 col-sm-7 col-lg-3">
+                <div class="favorite col-xs-3 col-sm-6">
+                  <div class="box"><a href="#"><img src="images/heart.PNG" alt="favorite">
+                      <div class="hidden-xs favorite-info">Избранное</div>
+                      <div class="hidden-xs description"><span>0</span><span>Товаров</span></div></a></div>
+                </div>
+                <div class="basket col-xs-3 col-sm-6">
+                  <div class="box"><a href="#"><img src="images/basket.PNG" alt="basket">
+                      <div class="hidden-xs favorite-info">Корзина</div>
+                      <div class="hidden-xs description">Корзина пуста</div></a></div>
+                </div>
+              </div>
             </div>
           </div>
         </header>
