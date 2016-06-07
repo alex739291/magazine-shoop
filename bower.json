@@ -1,0 +1,24 @@
+{
+  "name": "my-portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "alex savchuk"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/libraries",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4"
+  },
+  "devDependencies": {
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}

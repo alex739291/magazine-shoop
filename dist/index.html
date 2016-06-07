@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600italic" rel="stylesheet">
+    <link href="libraries/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="libraries/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="top-panel col-xs-12">
+            <div class="top-panel-right col-xs-4 col-sm-6 col-md-6">
+              <nav class="navbar hidden-sm hidden-xs navbar-menu">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Каталог продукции</a></li>
+                  <li><a href="#">Услуги и сервис</a></li>
+                  <li class="dropdown"><a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="dropdown-toggle">Еще...</a>
+                    <ul aria-labelledby="dropdownMenu1" class="dropdown-menu">
+                      <li><a href="#">Полезная информация</a></li>
+                      <li><a href="#">Проекты</a></li>
+                      <li><a href="#">Акции</a></li>
+                      <li><a href="#">Контакты</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="navbar hidden-lg hidden-md">
+                <ul>
+                  <li class="dropdown glyphicon glyphicon-align-justify"><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">Меню</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">О компании</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Каталог продукции</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Услуги и сервис</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Полезная информация</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Проекты</a></li>
+                      <li class="divider">
+                        <li><a href="#">Акции</a></li>
+                      </li>
+                      <li class="divider">
+                        <li><a href="#">Контакты</a></li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="top-panel-left col-xs-8 col-sm-6 col-md-6"><span class="hidden-xs">Ваш город :</span><a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle hidden-xs">></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Абаза</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Абдулино</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Абдубинск</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Агидель</a></li>
+                <li class="divider">
+                  <li><a href="#">Все города</a></li>
+                </li>
+              </ul><a href="#">Вход</a><a href="#">Регистрация</a>
+            </div>
+          </div>
+        </div>
+        <header class="row">
+          <div class="bottom-panel col-xs-12 col-sm-5"><a href="index.html"><img src="images/Снимок.PNG"></a></div>
+          <div class="shoping-areea col-xs-12 col-sm-7">
+            <div class="favorite col-xs-3 col-sm-6">
+              <div class="box"><a href="#"><img src="images/heart.PNG" alt="favorite">
+                  <div class="hidden-xs favorite-info">Избранное</div>
+                  <div class="hidden-xs description"><span>0</span><span>Товаров</span></div></a></div>
+            </div>
+            <div class="basket col-xs-3 col-sm-6">
+              <div class="box"><a href="#"><img src="images/basket.PNG" alt="basket">
+                  <div class="hidden-xs favorite-info">Корзина</div>
+                  <div class="hidden-xs description">Корзина пуста</div></a></div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </main>
+    <script src="js/app.min.js"></script>
+    <script src="libraries/jquery/dist/jquery.js"></script>
+    <script src="libraries/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

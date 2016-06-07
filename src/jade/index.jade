@@ -1,0 +1,87 @@
+extends layouts/main.jade
+block content
+    main
+        .container
+            .row
+                .top-panel.col-xs-12
+                    .top-panel-right.col-xs-4.col-sm-6.col-md-6
+                        include ./include/_lg
+                        nav.navbar.hidden-lg.hidden-md
+                            ul
+                                li.dropdown.glyphicon.glyphicon-align-justify
+                                    a.dropdown-toggle(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Меню
+                                    ul.dropdown-menu
+                                        li
+                                            a(href="#") О компании
+                                        li.divider
+                                        li
+                                            a(href="#") Каталог продукции
+                                        li.divider
+                                        li
+                                            a(href="#") Услуги и сервис
+                                        li.divider
+                                        li
+                                            a(href="#") Полезная информация
+                                        li.divider
+                                        li
+                                            a(href="#") Проекты
+                                        li.divider
+                                            li
+                                                a(href="#") Акции
+                                        li.divider
+                                            li
+                                                a(href="#") Контакты
+                    .top-panel-left.col-xs-8.col-sm-6.col-md-6
+                        span.hidden-xs Ваш город :
+                        a.dropdown-toggle.hidden-xs(href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") >
+                        ul.dropdown-menu
+                            li
+                                a(href="#") Абаза
+                            li.divider
+                            li
+                                a(href="#") Абдулино
+                            li.divider
+                            li
+                                a(href="#") Абдубинск
+                            li.divider
+                            li
+                                a(href="#") Агидель
+                            li.divider
+                                li
+                                    a(href="#") Все города
+                        a(href="#") Вход
+                        a(href="#") Регистрация
+            header.row
+                .bottom-panel.col-xs-12.col-sm-5
+                    a(href="index.html")
+                        img(src="images/Снимок.PNG")
+                .shoping-areea.col-xs-12.col-sm-7
+                    .favorite.col-xs-3.col-sm-6
+                        .box
+                            a(href="#")
+                                img(src="images/heart.PNG" alt="favorite")
+                                div.hidden-xs.favorite-info Избранное
+                                div.hidden-xs.description
+                                    span 0
+                                    span Товаров
+                    .basket.col-xs-3.col-sm-6
+                        .box
+                            a(href="#")
+                                img(src="images/basket.PNG" alt="basket")
+                                div.hidden-xs.favorite-info Корзина
+                                div.hidden-xs.description Корзина пуста
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alex739291/basik-skill.git"
+  },
+  "author": "alex savchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex739291/basik-skill/issues"
+  },
+  "homepage": "https://github.com/alex739291/basik-skill#readme",
+  "dependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-watch": "^4.3.5",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "description": ""
+}
