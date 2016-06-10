@@ -1,0 +1,121 @@
+extends layouts/main
+block content
+    main
+        .container
+            header
+                .row
+                   .panel-top.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                       .row
+                           .top-left.col-xs-4.col-sm-5.col-md-7
+                               ul.nav.nav-pills.hidden-xs.hidden-sm
+                                   li
+                                       a(href='#') О компании
+                                   li
+                                       a(href='#') Каталог продукции
+                                   li
+                                       a(href='#') Услуги и сервис
+                                   li.dropdown(role='presentation')
+                                       a.dropdown-toogle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Еще...
+                                       ul.dropdown-menu
+                                           li
+                                               a(href='#') Полезная информация
+                                           li.divider
+                                           li
+                                               a(href='#') Проекты
+                                           li.divider
+                                           li
+                                               a(href='#') Акции
+                                           li.divider
+                                           li
+                                               a(href='#') Контакты
+
+                               ul.nav.nav-pills.hidden-md.hidden-lg
+                                   li.dropdown(role='presentation')
+                                       a.dropdown-toogle.glyphicon.glyphicon-menu-hamburger(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                           span Меню
+                                       ul.dropdown-menu
+                                           li
+                                               a(href='#') О компании
+                                           li.divider
+                                           li
+                                               a(href='#') Каталог продукции
+                                           li.divider
+                                           li
+                                               a(href='#') Услуги и сервис
+                                           li.divider
+                                           li
+                                               a(href='#') Полезная информация
+                                           li.divider
+                                           li
+                                               a(href='#') Проекты
+                                           li.divider
+                                           li
+                                               a(href='#') Акции
+                                           li.divider
+                                           li
+                                               a(href='#') Контакты
+                           .top-right.col-xs-8.col-sm-7.col-md-5
+                               ul.nav.nav-pills
+                                   li.hidden-xs.hidden-sm
+                                       a(href='#') Скачать файл в PDF
+                                   li.dropdown.hidden-xs
+                                       a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Ваш город: >
+                                       ul.dropdown-menu
+                                           li
+                                              a(href='#') Астана
+                                           li.divider
+                                           li
+                                               a(href='#') Астана
+                                           li.divider
+                                           li
+                                               a(href='#') Астана
+                                           li.divider
+                                           li
+                                               a(href='#') Все города
+                                   li
+                                       a(href='#') Вход
+                                   li
+                                       a(href='#') Регисрация
+                .row
+                    .panel-center.col-xs-12.col-sm-12
+                        .row
+                            .logo.col-xs-12.col-sm-7.col-md-6.col-lg-5
+                                .row
+                                    .logo-name.col-sm-7.col-md-6.col-lg-6
+                                        a.hidden-md.hidden-lg(href='index.html')
+                                            img(src='img/logo.PNG' alt='monopolia')
+                                        a.hidden-sm.hidden-xs(href='index.html')
+                                            img(src='img/sm-logo.PNG' alt='monopolia')
+                                    .type-site.col-sm-5.col-md-6.col-lg-6.hidden-xs.hidden-sm
+                                        p Интернет - магазин одежды
+                            .direct-conatct.col-lg-2.hidden-md.hidden-xs.hidden-sm
+                                button Свяжитесь с нами
+                            .contact-us.col-md-2.col-lg-2.hidden-xs.hidden-sm
+                                .phone-number 8 495 212 85 06
+                                .adress г.Москва,ул.Егорова2
+                                .email Email:
+                                    a(href='#') info@redsign.ru
+
+                            .shoping-area.col-sm-5.col-md-4.col-lg-3.hidden-xs
+                                .row
+                                    .favorites.col-sm-6
+                                        .box
+                                            a.glyphicon.glyphicon-heart(href='#')
+                                            div Избранное
+                                            div 0 товаров
+                                    .basket.col-sm-6
+                                        .box
+                                            a.glyphicon.glyphicon-shopping-cart(href='#')
+                                            div Корзина
+                                            div Корзина пуста
+
+                .row
+                    .panel-bottom.col-xs-12.hidden-sm.hidden-md.hidden-lg
+                        .row
+                            .cart-shoping.col-xs-12
+                                .favorites.col-xs-2
+                                    a.glyphicon.glyphicon-heart(href='#')
+                                .basket.col-xs-2
+                                    a.glyphicon.glyphicon-shopping-cart(href='#')
+
+

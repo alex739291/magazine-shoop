@@ -1,0 +1,168 @@
+.panel-top{
+  height: 50px;
+}
+.top-left{
+  .nav{
+    li{
+      a{
+        color: #5e5e5e;
+        padding: 2px 5px;
+        &:focus{
+          background: none;
+        }
+        &:hover{
+          background: none;
+          text-decoration: underline;
+        }
+        span{
+          padding-left: 10px;
+        }
+      }
+      .dropdown-menu{
+        li{
+         a{
+           &:hover{
+             background: #ccc;
+             text-decoration: none;
+
+           }
+
+         }
+        }
+
+      }
+
+
+      }
+    }
+  }
+
+
+.top-right{
+  .nav{
+    float: right;
+    li{
+      a{
+        padding: 2px 5px;
+        color: #5e5e5e;
+        &:hover{
+          text-decoration: underline;
+          background: none;
+        }
+        &:focus{
+          background: none;
+        }
+      }
+    }
+    .dropdown-menu{
+      li{
+        a{
+          &:hover{
+            background: #ccc;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel-center{
+  height: 90px;
+  padding-top: 20px;
+  .logo{
+    .type-site{
+      border-left: 1px solid #000000;
+      font-weight: 400;
+      font-size: 18px;
+      color: #373a3d;
+      height: 70px;
+      padding-top: 10px;
+
+    }
+    .logo-name{
+      height: 70px;
+      line-height: 70px;
+    }
+    a{
+      padding-left: 5px;
+    }
+
+  }
+  .contact-us{
+    .phone-number{
+      color: #2e2e2e;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .email{
+      a{
+        color: #000;
+        text-decoration: underline;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .direct-conatct{
+
+    button{
+      width: 100%;
+      height: 35px;
+      color: #888;
+      background: #fff;
+      border:1px solid #000000;
+      &:hover{
+        background: #2e2e2e;
+        color: #fff;
+      }
+    }
+  }
+  .shoping-area{
+    .favorites{
+      padding-top: 10px;
+      .box{
+        width: 120px;
+        height: 50px;
+        a{
+          color: #5e5e5e;
+          font-size: 40px;
+          text-decoration: none;
+
+        }
+        div{
+          font-size: 12px;
+          font-weight: 700;
+          position: relative;
+          top:-44px;
+          left: 45px;
+          text-align: justify;
+          color: #555;
+
+        }
+      }
+    }
+    .basket{
+      @extend .favorites;
+    }
+  }
+}
+.panel-bottom{
+  height: 50px;
+  line-height: 50px;
+  .cart-shoping{
+    .favorites{
+      a{
+        color: #5e5e5e;
+        font-size: 40px;
+        text-decoration: none;
+        padding-top: 5px;
+      }
+    }
+    .basket{
+      @extend .favorites;
+    }
+  }
+
+}

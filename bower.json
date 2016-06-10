@@ -1,0 +1,21 @@
+{
+  "name": "work",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Alex Savchuk <alexsavchuk739291@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "dist/libraries",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "^4.1.1"
+  }
+}
