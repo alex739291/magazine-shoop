@@ -1,0 +1,43 @@
+.second-nav{
+  height: 400px;
+}
+.panel-heading{
+  background: #373a3d !important;
+  border-bottom: 1px solid #fff !important;
+  &:hover{
+    background: #2F3234 !important;
+  }
+}
+.panel-title{
+
+  a{
+    display: block;
+    color: #fff !important;
+    &:hover{
+      text-decoration: none;
+    }
+    &:focus{
+      text-decoration: none;
+    }
+
+    span{
+      float: right;
+    }
+  }
+}
+.list-group{
+  display: none;
+  li{
+    background: #373a3d;
+    &:hover{
+      background: #2F3234;
+    }
+    a{
+      display: block;
+      color: #fff;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+  }
+}
