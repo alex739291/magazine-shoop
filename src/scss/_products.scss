@@ -1,0 +1,118 @@
+.products{
+  margin-top: 15px;
+  .product-image{
+    position: relative;
+    a{
+      span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #EBEBEB;
+        color: #b8b8b8;
+        z-index: 4;
+        padding: 5px;
+        &:hover{
+          color: #000;
+          background: #999;
+        }
+      }
+    }
+  }
+  .description{
+    a{
+      color: #000000;
+    }
+    p{
+      height: 35px;
+      span{
+        color: #585f69
+      }
+      button{
+        float: right;
+        background: #2f3234;
+        border: none;
+        color: #fff;
+        height: 35px;
+        width: 96px;
+        &:hover{
+          background: #000000;
+        }
+      }
+    }
+  }
+  .availability{
+    text-align: right;
+    a{
+      color: #585f69;
+      border-bottom: 1px dashed;
+      &:hover{
+        text-decoration: none;
+        color: #0f0f0f;
+        border: none;
+      }
+    }
+    span{
+      color: green;
+      padding-left: 3px;
+    }
+  }
+  .thumbnail{
+    &:hover{
+      border: 1px solid #b8b8b8;
+
+    }
+  }
+}
+//CATALOG
+.catalog{
+  height: 460px;
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+}
+.border{
+  margin:0 0 17px;
+}
+.effect{
+  position: relative;
+
+  .caption{
+    max-height: 61px;
+    min-height: 61px;
+    overflow: hidden;
+    border: 1px solid #B8B8B8;
+    border-top: none;
+    position: absolute;
+    background: #fff;
+    bottom: -10px;
+
+
+    &:hover{
+      position: absolute;
+      bottom:1px;
+      z-index: 5;
+      background: #fff;
+      overflow: visible;
+      transition: all 0.5s ease;
+      border: 1px solid #B8B8B8;
+      max-height: 110px;
+      min-height: 110px;
+      cursor: pointer;
+    }
+    p{
+      color: #585f69;
+      padding: 0 0 4px 8px ;
+      font-size: 13px;
+    }
+    h4{
+      padding-left: 8px;
+      max-height: 48px;
+    }
+
+
+  }
+}

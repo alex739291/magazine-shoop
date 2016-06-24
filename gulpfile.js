@@ -70,7 +70,7 @@ gulp.task('jade', function() {
 
 // IMG
 
-gulp.task('images', function(){
+gulp.task('img', function(){
     return gulp.src('./src/img/*')
         .pipe(imagemin({
             progressive: true,
@@ -112,11 +112,11 @@ gulp.task('watch',function() {
     gulp.watch('./src/jade/**/*.jade', ['jade']);
     gulp.watch('./src/scss/**/*.scss', ['sass']);
     gulp.watch('./src/js/*.js', ['js']);
-    gulp.watch('./src/images/*', ['images']);
+    gulp.watch('./src/img/*', ['img']);
     gulp.watch('dist/*.html').on('change', browserSync.reload);
 });
 
 //--------------------------------------------------------------
 
 //default task
-gulp.task('default', ['watch','images','jade','sass','js']);
+gulp.task('default', ['watch','img','jade','sass','js']);
