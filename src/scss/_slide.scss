@@ -1,0 +1,42 @@
+.company{
+  margin-top: 20px;
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+  .download-presentation{
+    margin-top: 20px;
+    button{
+      height: 38px;
+      width: 202px;
+      border: 1px solid #000;
+      background: transparent;
+      &:hover{
+        background: #373a3d;
+        color: #fff;
+        border: none;
+      }
+    }
+  }
+}
+.costumer-reviews{
+  margin-top: 20px;
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+
+}
+
+.costumer{
+  background:rgba(230,229,224,1);
+  border: 1px solid #f6f6f6;
+  padding: 12px 21px;
+  height: 94px;
+}
