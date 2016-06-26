@@ -156,3 +156,213 @@
 .owl-pagination{
   text-align: right;
 }
+
+.news {
+
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+  .item {
+    margin-top: 10px;
+        .news-img {
+          float: left;
+          width: 100px;
+          height: 100px;
+          text-align: center;
+
+          a {
+            display: block;
+            border: 1px solid #ebebeb;
+            &:hover {
+              border-color: #DBDDDF;
+            }
+            img {
+              display: block;
+              width: auto;
+              max-width: 100%;
+              margin: 0 auto;
+              max-height: 98px;
+            }
+          }
+        }
+
+    .news-content {
+      overflow: hidden;
+      margin-left: 111px;
+      height: 141px;
+      .date {
+          font-family: "PT Sans", sans-serif;
+          font-size: 14px;
+          line-height: 1.38462;
+          color: #585f69;
+        }
+      .news_name {
+        a {
+        color: #373a3d;
+        }
+      }
+      .descr {
+        a {
+          font-family: "PT Sans", sans-serif;
+          font-size: 13px;
+          line-height: 1.38462;
+          color: #585f69;
+        }
+      }
+    }
+  }
+}
+
+.brands {
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+  .item {
+    margin-top: 10px;
+    width: 169.167px;
+    margin-right: 25px;
+    a {
+      text-align: center;
+      display: block;
+      border: 1px solid #ebebeb;
+      &:hover {
+        border-color: #B8B8B8;
+      }
+      img {
+        display: inline-block;
+        width: auto;
+        max-width: 100%;
+        max-height: 135px;
+        vertical-align: middle;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
+.our_shops {
+  h2{
+    border-bottom: 1px solid #EBEBEB;
+    span{
+      border-bottom: 2px solid #373a3d;
+      color:#585f69;
+    }
+  }
+  .search_city {
+    position: relative;
+    margin-bottom: 20px;
+    float: left;
+    .input-group {
+      position: relative;
+      display: table;
+      border-collapse: separate;
+      font-family: "PT Sans", sans-serif;
+      font-size: 14px;
+      line-height: 1.38462;
+      color: #585f69;
+      .form-control {
+        display: table-cell;
+        position: relative;
+        z-index: 2;
+        float: left;
+        width: 100%;
+        margin-bottom: 0px;
+        height: 35px;
+        box-shadow: none;
+        font-size: 14px;
+        line-height: 1.38462;
+        color: rgb(85, 85, 85);
+        background-color: rgb(255, 255, 255);
+        background-image: none;
+        border-image-source: initial;
+        border-image-slice: initial;
+        border-image-width: initial;
+        border-image-outset: initial;
+        border-image-repeat: initial;
+        border-radius: 0;
+        padding: 7px 14px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(235, 235, 235);
+        &:focus {
+          border-color: #C0C0C0
+        }
+
+
+      }
+      .input-group-addon {
+        background-color: transparent;
+        border-color: transparent;
+        padding: 7px 14px;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1;
+        color: #555555;
+        text-align: center;
+        border-radius: 0px;
+      }
+
+    }
+  }
+  .filter {
+    margin-bottom: 20px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .btn {
+      margin-right: 10px;
+      background-color: white;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid black;
+      white-space: nowrap;
+      padding: 7px 14px;
+      font-size: 14px;
+      line-height: 1.38462;
+      font-family: "PT Sans", sans-serif;
+      color: #585f69;
+      &:active {
+        background: #2F3234;
+        color: white;
+      }
+      &:hover {
+        background: #2F3234;
+        color: white;
+      }
+    }
+  }
+  .shop_list {
+    max-height: 350px;
+    border: 1px solid #ebebeb;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 0;
+    li {
+      padding: 9px 10px;
+      .name-of-list {
+        font-weight: bold;
+      }
+      .descr {
+        line-height: 19px;
+        font-family: "PT Sans", sans-serif;
+        font-size: 14px;
+      }
+    }
+  }
+}
