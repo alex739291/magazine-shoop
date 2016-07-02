@@ -1,0 +1,157 @@
+footer {
+  margin-top: 30px;
+  border-top: #373a3d 2px solid;
+  padding-top: 18px;
+  .foorer-logo {
+    border-bottom: 2px solid #373a3d;
+    max-width: 265px;
+    a {
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    color: #373a3d;
+    line-height: 1.1;
+  }
+  .contacts {
+    font-size: 14px;
+    line-height: 1.38462;
+    color: #585f69;
+    a {
+      color: #585f69;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+        color:#373A3D;
+      }
+    }
+    .phone-number {
+      a {
+        text-decoration: none;
+        color: #585f69;
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 1.38462;
+        letter-spacing: 0px;
+        &:hover {
+          color: #373A3D;
+        }
+
+        span {
+          color:#373A3D;
+
+        }
+      }
+    }
+    .adress {
+      color: #585f69;
+      font-size: 20px;
+    }
+  }
+  .other_buttons_wrap {
+    width: 60%;
+    text-align: center;
+    margin: 15px auto;
+    button {
+      width: 100%;
+      margin-bottom: 5px;
+      margin-right: 10px;
+      background-color: white;
+      display: inline-block;
+      font-weight: normal;
+      text-align: center;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid black;
+      white-space: nowrap;
+      padding: 7px 14px;
+      font-size: 14px;
+      line-height: 1.38462;
+      font-family: "PT Sans", sans-serif;
+      color: #585f69;
+      &:active {
+        background: #2F3234;
+        color: white;
+      }
+      &:hover {
+        background: #2F3234;
+        color: white;
+      }
+    }
+    a {
+      color: #585f69;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+        color:#373A3D;
+      }
+    }
+  }
+  .bottom_subs {
+    form {
+      p {
+        font-family: "PT Sans", sans-serif;
+        font-size: 13px;
+        line-height: 1.38462;
+        color: #585f69;
+        margin: 0 0 9.5px;
+      }
+      .input-group {
+        input {
+          border-radius: 0px;
+          &:focus {
+            border-color: grey;
+            box-shadow: none;
+          }
+          .form-control {
+            height: 35px;
+            border-radius: 0px;
+            padding: 7px 14px;
+            font-size: 14px;
+            line-height: 1.38462;
+            color: #555555;
+          }
+        }
+          span {
+            button {
+              display: inline-block;
+              margin-bottom: 0;
+              font-weight: normal;
+              text-align: center;
+              vertical-align: middle;
+              touch-action: manipulation;
+              cursor: pointer;
+              background-color: #373A3D ;
+              border: 1px solid transparent;
+              white-space: nowrap;
+              padding: 7px 14px;
+              font-size: 14px;
+              line-height: 1.38462;
+              color: white;
+              &:hover {
+                background-color: #2f3234 ;
+              }
+            }
+          }
+      }
+    }
+  }
+  .social_icons {
+    margin-top: 10px;
+    img {
+      float: left;
+      margin-right: 8px;
+      margin-bottom: 4px;
+    }
+  }
+}
