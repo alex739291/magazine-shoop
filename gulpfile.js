@@ -14,6 +14,7 @@ var gulp             = require('gulp'),
     imagemin         = require('gulp-imagemin'),
     imageminPngquant = require('imagemin-pngquant'),
     browserSync      = require('browser-sync'),
+    cleanCSS         = require('gulp-clean-css'),
     autoprefixer     = require('gulp-autoprefixer');
 
 //---------------------------------------------------------
@@ -39,6 +40,7 @@ gulp.task('sass', function () {
             errorHandler: onError
         }))
         .pipe(sass())
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(concat('style.css'))
         .pipe(autoprefixer("last 5 version", "> 1%", "ie 8", "ie 7"))
         .pipe(sourcemaps.init())
@@ -81,7 +83,11 @@ gulp.task('img', function(){
 });
 
 // ----------------------------------------------------------------
-
+gulp.task('minify-css', function() {
+    return gulp.src('dist/css/style.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/css/'));
+});
 // ----------------------------------------------------------------
 
 // Compile JS
@@ -99,7 +105,11 @@ gulp.task('js', function(){
 });
 
 // ------------------------------------------------------------
-
+gulp.task('minify-css', function() {
+    return gulp.src('dist/css/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('dist/css'));
+});
 //------------------------------------------------------
 
 // WATCh
