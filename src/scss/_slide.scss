@@ -1,7 +1,9 @@
+$break-large: 1199px;
 .company{
   margin-top: 20px;
   h2{
     border-bottom: 1px solid #EBEBEB;
+
     span{
       border-bottom: 2px solid #373a3d;
       color:#585f69;
@@ -24,8 +26,16 @@
 }
 .costumer-reviews{
   margin-top: 20px;
+  @media screen and (max-width: $break-large){
+    margin-top: 30px;
+  }
   h2{
     border-bottom: 1px solid #EBEBEB;
+    @media screen and (max-width: $break-large){
+      font-size: 20px;
+    }
+
+
     span{
       border-bottom: 2px solid #373a3d;
       color:#585f69;
@@ -39,4 +49,19 @@
   border: 1px solid #f6f6f6;
   padding: 12px 21px;
   height: 94px;
+  @media screen and (max-width: $break-large){
+    font-size: 13px;
+  }
+
+}
+.media-body{
+  h5{
+    font-size: 13px;
+    max-height: 10px;
+  }
+  p{
+    @media screen and (max-width: $break-large){
+      font-size: 13px;
+    }
+  }
 }

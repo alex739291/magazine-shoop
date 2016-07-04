@@ -154,18 +154,15 @@ header{
 .panel-bottom{
   height: 50px;
   line-height: 50px;
-  .cart-shoping{
-    .favorites{
-      a{
-        color: #5e5e5e;
-        font-size: 40px;
-        text-decoration: none;
-        padding-top: 5px;
-      }
-    }
-    .basket{
-      @extend .favorites;
+  .favorites{
+    a{
+      color: #5e5e5e;
+      font-size: 40px;
+      text-decoration: none;
+      padding-top: 5px;
     }
   }
-
+  .basket{
+    @extend .favorites;
+  }
 }

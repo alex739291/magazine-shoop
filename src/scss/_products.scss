@@ -1,8 +1,13 @@
+$break-large: 1199px;
+$break-phone: 547px;
+$break-iphone: 417px;
+$break-phoneSmall: 320px;
+
 .products{
   margin-top: 15px;
-  height: 780px;
   .product-image{
     position: relative;
+    max-height: 190px;
     a{
       span{
         position: absolute;
@@ -22,13 +27,21 @@
   .description{
     a{
       color: #000000;
+      @media screen and (max-width: $break-phone) and (min-width: $break-phoneSmall){
+        font-size: 13px;
+      }
+
     }
     p{
       height: 35px;
+
       span{
         color: #585f69
       }
       button{
+        @media screen and (max-width: $break-phone){
+          display: none;
+        }
         float: right;
         background: #2f3234;
         border: none;
@@ -43,6 +56,9 @@
   }
   .availability{
     text-align: right;
+    @media screen and (max-width: $break-phone) and (min-width: $break-phoneSmall){
+      display: none;
+    }
     a{
       color: #585f69;
       border-bottom: 1px dashed;
@@ -109,9 +125,6 @@
   }
 
 }
-
-
-
 .service{
   height: 430px;
   h2{
@@ -122,16 +135,22 @@
     }
   }
   .item-img{
-    &:hover{
-      border: 1px solid #b8b8b8;
-
-    }
     a{
       text-decoration: none;
       color: #585f69;
-      .img-descr{
+      .item-descr{
+        width: 250px;
+        text-align: left;
+        margin: 0 auto;
+        @media screen and (max-width: $break-large){
+          font-size: 12px;
+        }
         h4{
           color: #373a3d;
+          @media screen and (max-width: $break-large){
+            font-size: 16px;
+          }
+
         }
       }
     }
