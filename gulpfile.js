@@ -60,7 +60,7 @@ gulp.task('jade', function() {
             errorHandler: onError
         }))
         .pipe(jade({
-            pretty: true
+            pretty: false
 
         }))
 

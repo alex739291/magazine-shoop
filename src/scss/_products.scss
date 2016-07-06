@@ -2,6 +2,7 @@ $break-large: 1199px;
 $break-phone: 547px;
 $break-iphone: 417px;
 $break-phoneSmall: 320px;
+$break-phoneSize: 354px;
 
 .products{
   margin-top: 15px;
@@ -351,6 +352,11 @@ $break-phoneSmall: 320px;
       line-height: 1.38462;
       font-family: "PT Sans", sans-serif;
       color: #585f69;
+      @media screen and(min-width: $break-phoneSmall) and(max-width: $break-phoneSize) {
+        margin-right: 3px;
+        font-size: 13px;
+
+      }
       &:active {
         background: #2F3234;
         color: white;
