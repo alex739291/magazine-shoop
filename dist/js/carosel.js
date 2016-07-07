@@ -17,6 +17,11 @@ $(document).ready(function() {
 
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         stopOnHover: true,
+        paginationNumbers: false,
+        pagination : false,
+        navigation : true,
+        navigationText : ["<span class='glyphicon glyphicon-menu-left'></span>","<span class='glyphicon glyphicon-menu-right'></span>"],
+
 
         items : 4,
         itemsDesktop : [1199,3],
@@ -33,6 +38,9 @@ $(document).ready(function() {
 
         autoPlay: 3000, //Set AutoPlay to 3 seconds
         stopOnHover: true,
+        pagination : false,
+        navigation : true,
+        navigationText : ["<span class='glyphicon glyphicon-menu-left'></span>","<span class='glyphicon glyphicon-menu-right'></span>"],
 
         items : 1,
         itemsDesktop : [1245,1],
@@ -53,7 +61,10 @@ $(document).ready(function() {
         items : 3,
         itemsDesktopSmall: [1199,3],
         itemsTablet: [992,2],
-        itemsTabletSmall : [768,1]
+        itemsTabletSmall : [768,1],
+        pagination : false,
+        navigation : true,
+        navigationText : ["<span class='glyphicon glyphicon-menu-left'></span>","<span class='glyphicon glyphicon-menu-right'></span>"],
 
     });
 
@@ -68,7 +79,10 @@ $(document).ready(function() {
         items : 6,
         itemsDesktopSmall: [1199,6],
         itemsTablet: [992,4],
-        itemsTabletSmall : [768,2]
+        itemsTabletSmall : [768,2],
+        pagination : false,
+        navigation : true,
+        navigationText : ["<span class='glyphicon glyphicon-menu-left'></span>","<span class='glyphicon glyphicon-menu-right'></span>"],
 
     });
 

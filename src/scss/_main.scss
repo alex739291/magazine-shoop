@@ -1,0 +1,37 @@
+.owl-theme {
+  .owl-controls {
+    .owl-buttons {
+      text-align: right;
+      .owl-prev {
+        color: black;
+        border-radius: 0;
+        width: 22px;
+
+        &:hover {
+          color: white;
+          background-color: black;
+        }
+          .glyphicon {
+            top: 3px;
+            right: 4px;
+          }
+
+      }
+      .owl-next {
+        color: black;
+        border-radius: 0;
+        width: 22px;
+          .glyphicon {
+            top: 3px;
+            right: 4px;
+          }
+
+        &:hover {
+          color: white;
+          background-color: #373A3D;
+        }
+      }
+    }
+  }
+}
+
