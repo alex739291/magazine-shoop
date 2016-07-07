@@ -16,12 +16,15 @@ $(document).ready(function() {
     $("#owl-services").owlCarousel({
 
         autoPlay: 3000, //Set AutoPlay to 3 seconds
+        stopOnHover: true,
 
         items : 4,
         itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
+        itemsDesktopSmall : [990,2],
+        itemsTablet : [540,1]
 
     });
+
 
 });
 $(document).ready(function() {
@@ -29,14 +32,17 @@ $(document).ready(function() {
     $("#owl-company").owlCarousel({
 
         autoPlay: 3000, //Set AutoPlay to 3 seconds
+        stopOnHover: true,
 
         items : 1,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
+        itemsDesktop : [1245,1],
+        itemsDesktopSmall : [996,1]
 
     });
 
 });
+
+
 
 $(document).ready(function() {
 

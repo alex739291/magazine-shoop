@@ -3,120 +3,213 @@ block content
     main
         .container
             header
-                .row
-                   .panel-top.col-xs-12.col-sm-12.col-md-12.col-lg-12
-                       .row
-                           .top-left.col-xs-4.col-sm-5.col-md-7
-                               ul.nav.nav-pills.hidden-xs.hidden-sm
-                                   li
-                                       a(href='#') О компании
-                                   li
-                                       a(href='#') Каталог продукции
-                                   li
-                                       a(href='#') Услуги и сервис
-                                   li.dropdown(role='presentation')
-                                       a.dropdown-toogle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Еще...
-                                       ul.dropdown-menu
-                                           li
-                                               a(href='#') Полезная информация
-                                           li.divider
-                                           li
-                                               a(href='#') Проекты
-                                           li.divider
-                                           li
-                                               a(href='#') Акции
-                                           li.divider
-                                           li
-                                               a(href='#') Контакты
+               .panel-top
+                   .row
+                       .top-left.col-xs-4.col-sm-5.col-md-7
+                           ul.nav.nav-pills.hidden-xs.hidden-sm
+                               li
+                                   a(href='#') О компании
+                               li
+                                   a(href='#') Каталог продукции
+                               li
+                                   a(href='#') Услуги и сервис
+                               li.dropdown(role='presentation')
+                                   a.dropdown-toogle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Еще...
+                                   ul.dropdown-menu
+                                       li
+                                           a(href='#') Полезная информация
+                                       li.divider
+                                       li
+                                           a(href='#') Проекты
+                                       li.divider
+                                       li
+                                           a(href='#') Акции
+                                       li.divider
+                                       li
+                                           a(href='#') Контакты
 
-                               ul.nav.nav-pills.hidden-md.hidden-lg
-                                   li.dropdown(role='presentation')
-                                       a.dropdown-toogle.glyphicon.glyphicon-menu-hamburger(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
-                                           span Меню
-                                       ul.dropdown-menu
-                                           li
-                                               a(href='#') О компании
-                                           li.divider
-                                           li
-                                               a(href='#') Каталог продукции
-                                           li.divider
-                                           li
-                                               a(href='#') Услуги и сервис
-                                           li.divider
-                                           li
-                                               a(href='#') Полезная информация
-                                           li.divider
-                                           li
-                                               a(href='#') Проекты
-                                           li.divider
-                                           li
-                                               a(href='#') Акции
-                                           li.divider
-                                           li
-                                               a(href='#') Контакты
-                           .top-right.col-xs-8.col-sm-7.col-md-5
-                               ul.nav.nav-pills
-                                   li.hidden-xs.hidden-sm
-                                       a(href='#') Скачать файл в PDF
-                                   li.dropdown.hidden-xs
-                                       a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Ваш город: >
-                                       ul.dropdown-menu
-                                           li
-                                              a(href='#') Астана
-                                           li.divider
-                                           li
-                                               a(href='#') Астана
-                                           li.divider
-                                           li
-                                               a(href='#') Астана
-                                           li.divider
-                                           li
-                                               a(href='#') Все города
-                                   li
-                                       a(href='#') Вход
-                                   li
-                                       a(href='#') Регисрация
-                .row
-                    .panel-center.col-xs-12.col-sm-12
-                        .row
-                            .logo.col-xs-12.col-sm-7.col-md-6.col-lg-5
-                                .row
-                                    .logo-name.col-sm-7.col-md-6.col-lg-6
-                                        a.hidden-md.hidden-lg(href='index.html')
-                                            img(src='img/logo.PNG' alt='monopolia')
-                                        a.hidden-sm.hidden-xs(href='index.html')
-                                            img(src='img/sm-logo.PNG' alt='monopolia')
-                                    .type-site.col-sm-5.col-md-6.col-lg-6.hidden-xs.hidden-sm
-                                        p Интернет - магазин одежды
-                            .direct-conatct.col-lg-2.hidden-md.hidden-xs.hidden-sm
-                                button Свяжитесь с нами
-                            .contact-us.col-md-2.col-lg-2.hidden-xs.hidden-sm
-                                .phone-number 8 495 212 85 06
-                                .adress г.Москва,ул.Егорова2
-                                .email Email:
-                                    a(href='#') info@redsign.ru
+                           ul.nav.nav-pills.hidden-md.hidden-lg
+                               li.dropdown(role='presentation')
+                                   a.dropdown-toogle.glyphicon.glyphicon-menu-hamburger(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                                       span Меню
+                                   ul.dropdown-menu
+                                       li
+                                           a(href='#') О компании
+                                       li.divider
+                                       li
+                                           a(href='#') Каталог продукции
+                                       li.divider
+                                       li
+                                           a(href='#') Услуги и сервис
+                                       li.divider
+                                       li
+                                           a(href='#') Полезная информация
+                                       li.divider
+                                       li
+                                           a(href='#') Проекты
+                                       li.divider
+                                       li
+                                           a(href='#') Акции
+                                       li.divider
+                                       li
+                                           a(href='#') Контакты
+                       .top-right.col-xs-8.col-sm-7.col-md-5
+                           ul.nav.nav-pills
+                               li.hidden-xs.hidden-sm
+                                   a(href='#') Скачать файл в PDF
+                               li.dropdown.hidden-xs
+                                   a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Ваш город: >
+                                   ul.dropdown-menu
+                                       li
+                                          a(href='#') Астана
+                                       li.divider
+                                       li
+                                           a(href='#') Астана
+                                       li.divider
+                                       li
+                                           a(href='#') Астана
+                                       li.divider
+                                       li
+                                           a(href='#') Все города
+                               li
+                                   a(href='#') Вход
+                               li
+                                   a(href='#') Регисрация
 
-                            .shoping-area.col-sm-5.col-md-4.col-lg-3.hidden-xs
-                                .row
-                                    .favorites.col-sm-6
-                                        .box
-                                            a.glyphicon.glyphicon-heart(href='#')
-                                            div Избранное
-                                            div 0 товаров
-                                    .basket.col-sm-6
-                                        .box
-                                            a.glyphicon.glyphicon-shopping-cart(href='#')
-                                            div Корзина
-                                            div Корзина пуста
-                .row
-                    .panel-bottom.col-xs-12.hidden-sm.hidden-md.hidden-lg
-                        .row
-                            .cart-shoping.col-xs-12
-                                .favorites.col-xs-2
-                                    a.glyphicon.glyphicon-heart(href='#')
-                                .basket.col-xs-2
-                                    a.glyphicon.glyphicon-shopping-cart(href='#')
+               .panel-center
+                    .row
+                        .logo.col-xs-12.col-sm-7.col-md-6.col-lg-5
+                            .row
+                                .logo-name.col-sm-7.col-md-6.col-lg-6
+                                    a(href='index.html')
+                                        img(src='img/sm-logo.PNG' alt='monopolia')
+                                .type-site.col-sm-5.col-md-6.col-lg-6.hidden-xs.hidden-sm
+                                    p Интернет - магазин одежды
+                        .direct-conatct.col-lg-2.hidden-md.hidden-xs.hidden-sm
+                            button Свяжитесь с нами
+                        .contact-us.col-md-2.col-lg-2.hidden-xs.hidden-sm
+                            .phone-number 8 495 212 85 06
+                            .adress г.Москва,ул.Егорова2
+                            .email Email:
+                                a(href='#') info@redsign.ru
 
-        include include/include
+                        .shoping-area.col-sm-5.col-md-4.col-lg-3.hidden-xs
+                            .row
+                                .favorites.col-sm-6
+                                    .box
+                                        a.glyphicon.glyphicon-heart(href='#')
+                                        div Избранное
+                                        div 0 товаров
+                                .basket.col-sm-6
+                                    .box
+                                        a.glyphicon.glyphicon-shopping-cart(href='#')
+                                        div Корзина
+                                        div Корзина пуста
+               .panel-bottom.visible-xs
+                   .row
+                       .favorites.col-xs-2
+                           a.glyphicon.glyphicon-heart(href='#')
+                       .basket.col-xs-2
+                           a.glyphicon.glyphicon-shopping-cart(href='#')
+            section
+                .row
+                    .nav-container.col-xs-12.hidden-md.hidden-lg
+                        .panel-group#accordion
+                            .panel.panel-default
+                                .panel-heading
+                                    .panel-title
+                                        a(href='#section1' data-toggle='collapse' data-parent='#acardion') Каталог
+                                            span.glyphicon.glyphicon-align-justify
+                                ul.list-group#section1
+                                    li.list-group-item
+                                        a(href='#') Женщинам
+                                    li.list-group-item
+                                        a(href='#') Мужщинам
+                                    li.list-group-item
+                                        a(href='#') Детям
+                                    li.list-group-item
+                                        a(href='#') Для дома
+                                    li.list-group-item
+                                        a(href='#') Парфумерия
+                                    li.list-group-item
+                                        a(href='#') Подарки
+                                    li.list-group-item
+                                        a(href='#') Эксклюзив
+                                    li.list-group-item
+                                        a(href='#') Спортивная одежда
+                    .nav-destktop.col-md-12.col-lg-12
+                        ul.nav.nav-pills.visible-md.visible-lg
+                            li.dropdown
+                                a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Женщинам
+                                ul.dropdown-menu
+                                    li
+                                        a(href='#') Одежда
+
+                                    li.divider
+                                    li
+                                        a(href='#') Акксесуары
+                                    li.divider
+                                    li
+                                        a(href='#') Белье и купальники
+                            li
+                                a(href='#') Мужчинам
+                            li
+                                a(href='#') Детям
+                            li
+                                a(href='#') Для дома
+                            li
+                                a(href='#') Парфумерия
+                            li
+                                a(href='#') Подарки
+                            li
+                                a(href='#') Екслюзив
+                            li.dropdown.weight.hidden-lg
+                                a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') ...
+                                ul.dropdown-menu
+                                    li
+                                        a(href='#') Спортивные товары
+                            li.visible-lg
+                                a(href='#') Спортивные товары
+
+                            li.search
+                                span.glyphicon.glyphicon-search.dropdown-toggle(data-toggle='dropdown')
+                                .dropdown-menu.dropdown-menu-right
+                                    form.navbar-form.navbar-left(action='#' method='post' role='search')
+                                        .form-group
+                                            input.form-control(type='text' placeholder='Искать')
+                                        button.btn.btn-default(type='submit') Искать
+        section
+            #carousel.carousel.slide(data-ride='carousel' data-interval='4000')
+                ol.carousel-indicators
+                    li.active(data-target='#carousel' data-slide-to='0')
+                    li(data-target='#carousel' data-slide-to='1')
+                    li(data-target='#carousel' data-slide-to='2')
+                //Wrapper for slides
+                .carousel-inner(role='listbox')
+                    .item.active
+                        a(href='#')
+                            img(src='img/slide1.png' alt='slide1')
+                        .carousel-caption
+                            h3 Слайдер 1
+                    .item
+                        a(href='#')
+                            img(src='img/slide2.png' alt='slide1')
+                        .carousel-caption
+                            h3 Слайдер 2
+                    .item
+                        a(href='#')
+                            img(src='http://dummyimage.com/1300x400/8b90bf/0011ff' alt='slide1')
+                        .carousel-caption
+                            h3 Слайдер 3
+                //Controls
+                a.left.carousel-control(href='#carousel' role='button' data-slide='prev')
+                    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+                    span.sr-only Previous
+                a.right.carousel-control(href='#carousel' role='button' data-slide='next')
+                    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+                    span.sr-only Next
+
+            .container
+                include include/include
         include include/footer
         include include/footer_copyright

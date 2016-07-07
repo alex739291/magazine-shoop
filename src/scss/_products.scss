@@ -1,8 +1,14 @@
+$break-large: 1199px;
+$break-phone: 547px;
+$break-iphone: 417px;
+$break-phoneSmall: 320px;
+$break-phoneSize: 354px;
+
 .products{
   margin-top: 15px;
-  height: 780px;
   .product-image{
     position: relative;
+    max-height: 190px;
     a{
       span{
         position: absolute;
@@ -22,13 +28,21 @@
   .description{
     a{
       color: #000000;
+      @media screen and (max-width: $break-phone) and (min-width: $break-phoneSmall){
+        font-size: 13px;
+      }
+
     }
     p{
       height: 35px;
+
       span{
         color: #585f69
       }
       button{
+        @media screen and (max-width: $break-phone){
+          display: none;
+        }
         float: right;
         background: #2f3234;
         border: none;
@@ -43,6 +57,9 @@
   }
   .availability{
     text-align: right;
+    @media screen and (max-width: $break-phone) and (min-width: $break-phoneSmall){
+      display: none;
+    }
     a{
       color: #585f69;
       border-bottom: 1px dashed;
@@ -66,7 +83,6 @@
 }
 //CATALOG
 .catalog{
-  height: 460px;
   h2{
     border-bottom: 1px solid #EBEBEB;
     span{
@@ -74,48 +90,41 @@
       color:#585f69;
     }
   }
-}
-.border{
-  margin:0 0 20px;
-}
-.effect{
-  position: relative;
-
   .caption{
-    max-height: 61px;
-    min-height: 61px;
-    overflow: hidden;
-    border: 1px solid #B8B8B8;
-    border-top: none;
-    position: absolute;
-    background: #fff;
-    bottom: -10px;
-
-
-    &:hover{
+    position: relative;
+    min-height: 54px;
+    .data{
+      min-height: 56px;
+      max-height: 56px;
+      overflow: hidden;
       position: absolute;
-      bottom:1px;
-      z-index: 5;
+      top: 0;
+      left: 0;
+      padding-top: 4px;
+      backface-visibility: hidden;
+      transition: all, 0.2s, ease-in-out 0s;
       background: #fff;
-      overflow: visible;
-      transition: all 0.5s ease;
-      border: 1px solid #B8B8B8;
-      max-height: 110px;
-      min-height: 110px;
-      cursor: pointer;
-    }
-    p{
-      color: #585f69;
-      padding: 0 0 4px 8px ;
-      font-size: 13px;
-    }
-    h4{
-      padding-left: 8px;
-      max-height: 48px;
-    }
+      &:hover{
+        min-height: 100px;
+        max-height: 100px;
+        position: absolute;
+        top: -40px;
+        z-index: 5;
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+
+      }
 
 
+    .name-product{
+        font-size: 16px;
+        color: #000;
+        padding-bottom: 9px;
+
+      }
+    }
   }
+
 }
 .service{
   height: 430px;
@@ -127,16 +136,22 @@
     }
   }
   .item-img{
-    &:hover{
-      border: 1px solid #b8b8b8;
-
-    }
     a{
       text-decoration: none;
       color: #585f69;
-      .img-descr{
+      .item-descr{
+        width: 250px;
+        text-align: left;
+        margin: 0 auto;
+        @media screen and (max-width: $break-large){
+          font-size: 12px;
+        }
         h4{
           color: #373a3d;
+          @media screen and (max-width: $break-large){
+            font-size: 16px;
+          }
+
         }
       }
     }
@@ -275,7 +290,7 @@
         z-index: 2;
         float: left;
         width: 100%;
-        margin-bottom: 0px;
+        margin-bottom: 0;
         height: 35px;
         box-shadow: none;
         font-size: 14px;
@@ -308,7 +323,7 @@
         line-height: 1;
         color: #555555;
         text-align: center;
-        border-radius: 0px;
+        border-radius: 0;
       }
 
     }
@@ -337,6 +352,11 @@
       line-height: 1.38462;
       font-family: "PT Sans", sans-serif;
       color: #585f69;
+      @media screen and(min-width: $break-phoneSmall) and(max-width: $break-phoneSize) {
+        margin-right: 3px;
+        font-size: 13px;
+
+      }
       &:active {
         background: #2F3234;
         color: white;

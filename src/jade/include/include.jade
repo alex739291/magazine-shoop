@@ -1,598 +1,486 @@
-.container-fluid
-    .container
-        section.second-nav
-            .row
-                .nav-container.col-xs-12.hidden-md.hidden-lg
-                    .panel-group#accordion
-                        .panel.panel-default
-                            .panel-heading
-                                .panel-title
-                                    a(href='#section1' data-toggle='collapse' data-parent='#acardion') Каталог
-                                        span.glyphicon.glyphicon-align-justify
-                            ul.list-group#section1
-                                li.list-group-item
-                                    a(href='#') Женщинам
-                                li.list-group-item
-                                    a(href='#') Мужщинам
-                                li.list-group-item
-                                    a(href='#') Детям
-                                li.list-group-item
-                                    a(href='#') Для дома
-                                li.list-group-item
-                                    a(href='#') Парфумерия
-                                li.list-group-item
-                                    a(href='#') Подарки
-                                li.list-group-item
-                                    a(href='#') Эксклюзив
-                                li.list-group-item
-                                    a(href='#') Спортивная одежда
-                .nav-destktop.col-md-12.col-lg-12
-                    ul.nav.nav-pills.visible-md.visible-lg
-                        li.dropdown
-                            a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') Женщинам
-                            ul.dropdown-menu
-                                li
-                                    a(href='#') Одежда
+section
+    #owl-demo
+        div.item
+            a(href='#')
+                img(src='img/smal-baner1.PNG' alt='smal-baner')
+                div.name Сезонная одежда для спорта
+        div.item
+            a(href='#')
+                img(src='img/smal-baner2.PNG' alt='smal-baner')
+                div.name Новый весенний каталог
+        div.item
+            a(href='#')
+                img(src='img/smal-baner3.PNG' alt='smal-baner')
+                div.name Новая колекция
+section.products
+    .row
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product1.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
 
-                                li.divider
-                                li
-                                    a(href='#') Акксесуары
-                                li.divider
-                                li
-                                    a(href='#') Белье и купальники
-                        li
-                            a(href='#') Мужчинам
-                        li
-                            a(href='#') Детям
-                        li
-                            a(href='#') Для дома
-                        li
-                            a(href='#') Парфумерия
-                        li
-                            a(href='#') Подарки
-                        li
-                            a(href='#') Екслюзив
-                        li.dropdown.weight.hidden-lg
-                            a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false') ...
-                            ul.dropdown-menu
-                                li
-                                    a(href='#') Спортивные товары
-                        li.visible-lg
-                            a(href='#') Спортивные товары
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product2.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
 
-                        li.search
-                            span.glyphicon.glyphicon-search.dropdown-toggle(data-toggle='dropdown')
-                            .dropdown-menu.dropdown-menu-right
-                                form.navbar-form.navbar-left(action='' method='post' role='search')
-                                    .form-group
-                                        input.form-control(type='text' placeholder='Искать')
-                                    button.btn.btn-default(type='submit') Искать
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product3.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
 
-    .container-fluid
-        section.slider
-            .row
-                .slider-presentation.col-lg-12.col-sm-12.col-md-12.col-xs-12
-                    #carousel.carousel.slide(data-ride='carousel' data-interval='4000')
-                        ol.carousel-indicators
-                            li.active(data-target='#carousel' data-slide-to='0')
-                            li(data-target='#carousel' data-slide-to='1')
-                            li(data-target='#carousel' data-slide-to='2')
-                        //Wrapper for slides
-                        .carousel-inner(role='listbox')
-                            .item.active
-                                a(href='#')
-                                    img(src='img/slide1.png' alt='' width='100%')
-                                .carousel-caption
-                                    h3 Слайдер 1
-                            .item
-                                a(href='#')
-                                    img(src='img/slide2.png' alt='' width='100%')
-                                .carousel-caption
-                                    h3 Слайдер 2
-                            .item
-                                a(href='#')
-                                    img(src='http://dummyimage.com/1300x400/8b90bf/0011ff' alt='' width='100%')
-                                .carousel-caption
-                                    h3 Слайдер 3
-                        //Controls
-                        a.left.carousel-control(href='#carousel' role='button' data-slide='prev')
-                            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-                            span.sr-only Previous
-                        a.right.carousel-control(href='#carousel' role='button' data-slide='next')
-                            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-                            span.sr-only Next
-    .container
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product4.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
+    .row
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product5.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product6.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product7.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-6
+            .thumbnail
+                .product-image
+                    a(href='#')
+                        img(src='img/product8.PNG' alt='product1')
+                        span.glyphicon.glyphicon-heart
+                .caption.description
+                    h3
+                        a(href='#') Кружевное платье + пример SKU
+                    p
+                        span 000000 грн
+                        button Побробнее
+                    .availability
+                        a(href='#') Наличие:
+                        span есть
+section.catalog
+    h2
+        span Каталог
+    .row
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img1.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Женщинам
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img2.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Мужчинам
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img3.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Детям
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img4.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Для дома
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+    .row
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img5.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Парфумерия
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img6.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Подарки
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img7.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Эксклюзив
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+        .col-md-3.col-lg-3.col-sm-6.col-xs-12
+            .thumbnail
+                a(href='#')
+                    img(src='img/catalog-img8.PNG' alt='product1')
+                .caption
+                    .info
+                        .data
+                            .name-product Спортивная одежда
+                            .description Suspendisse non quam rutrum, gravida massa ut, egestas dolor. Cras quis laoreet ipsum, fermentum feugiat augue.
+
+section.service
+    h2
+        span Услуги
+    #owl-services.owl-carousel.owl-theme
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services1.PNG' alt='product1')
+                    .item-descr
+                        h4 Компютерная проектирование
+                        | На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services2.PNG' alt='product1')
+                    .item-descr
+                        h4 Отображение услуг в виде слайдера
+                        | На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services3.PNG' alt='product1')
+                    .item-descr
+                        h4 Выезд дизайнера замерщика
+                        | На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services4.PNG' alt='product1')
+                    .item-descr
+                        h4 Гарантийное обслужывание
+                        | На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services5.PNG' alt='product1')
+                    .item-descr
+                        h4 Как убрать раздел с главной
+                        | На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+        .item
+            .item-img
+                a(href='#')
+                    img(src='img/services6.PNG' alt='product1')
+                    .item-descr
+                        h4 Мебель в кредит
+                        |На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+.row
+    section.company.col-md-9.col-sm-12.col-xs-12
+        h2
+            span О компании
         .row
-            section.maincontent.col-md-12.col-lg-12
-                #owl-demo
-                    div.item
+            .company-img.col-md-4.col-lg-4
+                a(href='#')
+                    img.img-responsive(src='img/company-img.PNG' alt='Company')
+
+            .company-img.col-md-8.col-lg-8
+                .descr-company
+                    p Представляем Вашему вниманию новые коллекции мебели для гостиных, спален и детских комнат.Мы практикуем модульный принцип построения мебели. Комбинируя различные элементы, Вы можете по своему вкусу создать оригинальную мебельную композицию, оптимально соответствующую Вашим потребностям.
+                    p Кроме того, дизайнерами компании разработываются индивидуальные проекты на омнове наших решений.
+                .download-presentation
+                    button Скачать презентацию в PDF
+    section.costumer-reviews.col-md-3.col-sm-12.col-xs-12
+        h2
+            span Отзывы клиентов
+        #owl-company.owl-carousel.owl-theme
+            .item
+                .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
+                .media
+                    .media-left
                         a(href='#')
-                            img(src='img/smal-baner1.PNG' alt='')
-                            div.name Сезонная одежда для спорта
-                    div.item
+                            img.media-object(src='img/media1.PNG' alt='costumer reviews')
+                    .media-body
+                        h5 Анастасия Герасиенко
+                        p Генеральный деректор Компании Астра
+            .item
+                .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
+
+                .media
+                    .media-left
                         a(href='#')
-                            img(src='img/smal-baner2.PNG' alt='')
-                            div.name Новый весенний каталог
-                    div.item
+                            img.media-object(src='img/media2.PNG' alt='costumer reviews')
+                    .media-body
+                        h5 Виталий Прохоренко
+
+            .item
+                .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
+
+                .media
+                    .media-left
                         a(href='#')
-                            img(src='img/smal-baner3.PNG' alt='')
-                            div.name Новая колекция
-    .container
-        section.products
-            .row
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product1.PNG' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
+                            img.media-object(src='img/media1.PNG' alt='costumer reviews')
+                    .media-body
+                        h5 Анастасия Герасиенко
+                        p Генеральный деректор Компании Астра
+            .item
+                .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
 
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product2.PNG' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product3.PNG' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product4.PNG' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-            .row
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product5.png' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product6.png' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product7.png' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-
-                .col-md-3.col-lg-3.col-sm-6.col-xs-6
-                    .thumbnail
-                        .product-image
-                            a(href='#')
-                                img(src='img/product8.png' alt='')
-                                span.glyphicon.glyphicon-heart
-                        .caption.description
-                            h3
-                                a(href='#') Кружевное платье + пример SKU
-                            p
-                                span 000000 грн
-                                button Побробнее
-                            .availability
-                                a(href='#') Наличие:
-                                span есть
-    .container
-        section.catalog
-            h2
-                span Каталог
-
-            section.galerry-foto
-                .row.border
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img1.PNG' width='100%')
-                        .effect
-                            .caption
-                                 h4 Женщинам
-                                 p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img2.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Мужчинам
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img3.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Детям
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img4.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Для дома
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-                .row
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img5.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Парфумерия
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img6.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Подарки
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img7.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Эксклюзив
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-                    .col-md-3.col-lg-3.col-sm-6.col-xs-12
-                        .img-catalog
-                            a(href='#')
-                                img(src='img/catalog-img8.PNG' width='100%')
-                        .effect
-                            .caption
-                                h4 Спортивная Одежда
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный Ни твореньях За ея послушным.
-
-        section.service.col-lg-12.col-md-12.col-sm-12.col-xs-12
-            h2
-                span Услуги
-            #owl-services.owl-carousel.owl-theme
-                .item
-                    .item-img
+                .media
+                    .media-left
                         a(href='#')
-                            img(src='img/services1.PNG')
-                            .item-descr
-                                h4 Компютерная проектирование
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
-                .item
-                    .item-img
-                        a(href='#')
-                            img(src='img/services2.PNG')
-                            .item-descr
-                                h4 Отображение услуг в виде слайдера
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
+                            img.media-object(src='img/media2.PNG' alt='costumer reviews')
+                    .media-body
+                        h5 Виталий Прохоренко
+section.news
+    h2
+        span Новости сайта
+    #owl-newslistcol.owl-carousel.owl-theme
+        .item
+            .news-img
+                a(href='#')
+                    img(src='img/news_img_1.png' title='Выиграйте поездку в Италию!' alt='product1')
+            .news-content
+                .date 11.10.2015
+                .news_name
+                    a(href='#') Выиграйте поездку в Италию!
+                .descr
+                    a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+        .item
+            .news-img
+                a(href='#')
+                    img(src='img/news_img_2.jpg' title='Компания «Монополия» наградила лучших сотрудников' alt='product1')
+            .news-content
+                .date 24.05.2014
+                .news_name
+                    a(href='#') Компания «Монополия» наградила лучших сотрудников
+                .descr
+                    a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+        .item
+            .news-img
+                a(href='#')
+                    img(src='img/news_img_3.jpg' title='Новый офис в Праге' alt='product1')
+            .news-content
+                .date 24.05.2014
+                .news_name
+                    a(href='#') Новый офис в Праге
+                .descr
+                    a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+        .item
+            .news-img
+                a(href='#')
+                    img(src='img/news_img_4.jpg' title='Невероятно, но факт!' alt='product1')
+            .news-content
+                .date 15.03.2014
+                .news_name
+                    a(href='#') Невероятно, но факт!
+                .descr
+                    a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+        .item
+            .news-img
+                a(href='#')
+                    img(src='img/news_img_4.jpg' title='Все новое — хорошо забытое старое' alt='product1')
+            .news-content
+                .date 25.02.2014
+                .news_name
+                    a(href='#') Все новое — хорошо забытое старое
+                .descr
+                    a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
+.row
+    section.brands.col-lg-12.col-md-12.col-sm-12.col-xs-12
+        h2
+            span Бренды
+        #owl-brands.owl-carousel.owl-theme
+            .item
+                a(href='#')
+                    img(src='img/brand_boss.jpg' title='Boss' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_demix.jpg' title='Demix' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_inditex.jpg' title='Inditex' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_lacie.jpg' title='Lacie' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_mixed-media.jpg' title='Mixed Media' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_asics.jpg' title='Asics' alt='product1')
+            .item
+                a(href='#')
+                    img(src='img/brand_atlas.jpg' title='Atlas' alt='product1')
 
-                .item
-                    .item-img
-                        a(href='#')
-                            img(src='img/services3.PNG')
-                            .item-descr
-                                h4 Выезд дизайнера замерщика
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
-
-                .item
-                    .item-img
-                        a(href='#')
-                            img(src='img/services4.PNG')
-                            .item-descr
-                                h4 Гарантийное обслужывание
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
-
-                .item
-                    .item-img
-                        a(href='#')
-                            img(src='img/services5.PNG')
-                            .item-descr
-                                h4 Как убрать раздел с главной
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
-                .item
-                    .item-img
-                        a(href='#')
-                            img(src='img/services6.PNG')
-                            .item-descr
-                                h4 Мебель в кредит
-                                p На глубокий Он Скользим Ах на скорбном средство. ﻿кто. Поддержит ль достаться способный
-        .row
-            section.company.col-md-9.col-lg-9.col-sm-12.col-xs-12
-                h2
-                    span О компании
-                .row
-                    .company-img.col-md-4.col-lg-4
-                        a(href='#')
-                            img(src='img/company-img.PNG' alt='Company')
-                    .company-img.col-md-8.col-lg-8
-                        .descr-company
-                            p Представляем Вашему вниманию новые коллекции мебели для гостиных, спален и детских комнат.Мы практикуем модульный принцип построения мебели. Комбинируя различные элементы, Вы можете по своему вкусу создать оригинальную мебельную композицию, оптимально соответствующую Вашим потребностям.
-                                |                               Кроме того, дизайнерами компании разработываются индивидуальные проекты на омнове наших решений.
-                        .download-presentation
-                            button Скачать презентацию в PDF
-            section.costumer-reviews.col-md-3.col-lg-3.col-sm-12.col-xs-12
-                h2
-                    span Отзывы клиентов
-                #owl-company.owl-carousel.owl-theme
-                    .item
-                        .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
-                        .media
-                            .media-left
-                                a(href='#')
-                                    img.media-object(src='img/media1.PNG' alt='costumer reviews')
-                            .media-body
-                                h5.media-heading Анастасия Герасиенко
-                                |Генеральный деректор Компании Астра
-                    .item
-                        .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
-
-                        .media
-                            .media-left
-                                a(href='#')
-                                    img.media-object(src='img/media2.PNG' alt='costumer reviews')
-                            .media-body
-                                h5.media-heading Виталий Прохоренко
-
-                    .item
-                        .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
-
-                        .media
-                            .media-left
-                                a(href='#')
-                                    img.media-object(src='img/media1.PNG' alt='costumer reviews')
-                            .media-body
-                                h5.media-heading Анастасия Герасиенко
-                                | Генеральный деректор Компании Астра
-                    .item
-                        .costumer Яры Оно сил оны лия. Цветах придет суетны. Сей раб муж око Луг жен сие.
-
-                        .media
-                            .media-left
-                                a(href='#')
-                                    img.media-object(src='img/media2.PNG' alt='costumer reviews')
-                            .media-body
-                                h5.media-heading Анастасия Герасиенко
-                                | Генеральный деректор Компании Астра
-        .row
-            section.news.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                h2
-                    span Новости сайта
-                #owl-newslistcol.owl-carousel.owl-theme
-                    .item
-                        .news-img
-                            a(href='#')
-                                img(src='img/news_img_1.png' title='Выиграйте поездку в Италию!')
-                        .news-content
-                            .date 11.10.2015
-                            .news_name
-                                a(href='#') Выиграйте поездку в Италию!
-                            .descr
-                                a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
-                    .item
-                        .news-img
-                            a(href='#')
-                                img(src='img/news_img_2.jpg' title='Компания «Монополия» наградила лучших сотрудников')
-                        .news-content
-                            .date 24.05.2014
-                            .news_name
-                                a(href='#') Компания «Монополия» наградила лучших сотрудников
-                            .descr
-                                a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
-                    .item
-                        .news-img
-                            a(href='#')
-                                img(src='img/news_img_3.jpg' title='Новый офис в Праге')
-                        .news-content
-                            .date 24.05.2014
-                            .news_name
-                                a(href='#') Новый офис в Праге
-                            .descr
-                                a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
-                    .item
-                        .news-img
-                            a(href='#')
-                                img(src='img/news_img_4.jpg' title='Невероятно, но факт!')
-                        .news-content
-                            .date 15.03.2014
-                            .news_name
-                                a(href='#') Невероятно, но факт!
-                            .descr
-                                a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
-                    .item
-                        .news-img
-                            a(href='#')
-                                img(src='img/news_img_4.jpg' title='Все новое — хорошо забытое старое')
-                        .news-content
-                            .date 25.02.2014
-                            .news_name
-                                a(href='#') Все новое — хорошо забытое старое
-                            .descr
-                                a(href='#') Aenean quis pharetra quam, vel venenatis neque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis sodales condimentum tristique. Suspendisse a nisi et tortor viverra efficitur eu ac turpis. Aenean eu diam lorem. Phasellus viverra orci sed enim pellentesque aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ultrices magna vel pharetra maximus. Nullam fermentum efficitur felis vel laoreet. Nulla sagittis tempor vehicula. Cras felis odio, mollis et tincidunt porttitor, facilisis ac odio. Fusce tincidunt elit mattis odio facilisis, in semper risus commodo.
-        .row
-            section.brands.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                h2
-                    span Бренды
-                #owl-brands.owl-carousel.owl-theme
-                    .item
-                        a(href='#')
-                            img(src='img/brand_boss.jpg' title='Boss')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_demix.jpg' title='Demix')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_inditex.jpg' title='Inditex')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_lacie.jpg' title='Lacie')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_mixed-media.jpg' title='Mixed Media')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_asics.jpg' title='Asics')
-                    .item
-                        a(href='#')
-                            img(src='img/brand_atlas.jpg' title='Atlas')
-        .row
-            section.col-lg-12.col-md-12.col-sm-12.col-xs-12.our_shops
-                h2
-                    span Наши магазины
-                .row
-                    .col-md-3.col-sm-12.col-xs-12.search_city
-                        .input-group
-                            input.form-control(type='text' name='city' placeholder='Введите наименование города')
-                            span.input-group-addon
-                                span.glyphicon.glyphicon-search
-                        ul.dropdown-menu.list-unstyled.cities_list(style='display:none')
-                            li.item(style='display:none')
-                                a(href='#') Cочи
-                            li.item(style='display:none')
-                                a(href='#') Новгород
-                            li.item(style='display:none')
-                                a(href='#') Москва
-                            li.item(style='display:none')
-                                a(href='#') Самара
-                            li.item(style='display:none')
-                                a(href='#') Санкт-Петербург
-                    .col-md-9.filter
-                        button Cклад
-                        button Магазин
-                        button Все объекты
-                .col-md-3.col-sm-12.col-xs-12.shop_list
-                        ul.list-unstyled
-                            li
-                                .name-of-list Склад в Нижнем Новгороде
-                                .descr
-                                    | Нижний Новгород, ул. Москвичкина, до. 88
-                                    br
-                                    | тел. +7 (8888) 888-88-88
-                                    br
-                                    | 10:00-17:00
-                            li
-                                .name-of-list Склад в Самаре
-                                .descr
-                                    | Самара, ул. Пограничника, до. 8
-                                    br
-                                    | тел. +7 (495) 888-88-88
-                                    br
-                                    | 10:00-18:00
-                            li
-                                .name-of-list Склад в Самаре
-                                .descr
-                                    | Самара, ул. Пограничника, до. 8
-                                    br
-                                    | тел. +7 (495) 888-88-88
-                                    br
-                                    | 10:00-18:00
-                            li
-                                .name-of-list Склад в Самаре
-                                .descr
-                                    | Самара, ул. Пограничника, до. 8
-                                    br
-                                    | тел. +7 (495) 888-88-88
-                                    br
-                                    | 10:00-18:00
-                            li
-                                .name-of-list Склад в Самаре
-                                .descr
-                                    | Самара, ул. Пограничника, до. 8
-                                    br
-                                    | тел. +7 (495) 888-88-88
-                                    br
-                                    | 10:00-18:00
-                            li
-                                .name-of-list Склад в Самаре
-                                .descr
-                                    | Самара, ул. Пограничника, до. 8
-                                    br
-                                    | тел. +7 (495) 888-88-88
-                                    br
-                                    | 10:00-18:00
-                    .col-md-9.col-sm-12.col-xs-12
-                        .map
-                            #map(style='width: 100%; height: 350px')
-
-
-
-
-
+section.our_shops
+    h2
+        span Наши магазины
+    .row
+        .col-md-3.col-sm-12.col-xs-12.search_city
+            .input-group
+                input.form-control(type='text' name='city' placeholder='Введите наименование города')
+                span.input-group-addon
+                    span.glyphicon.glyphicon-search
+            ul.dropdown-menu.list-unstyled.cities_list(style='display:none')
+                li.item(style='display:none')
+                    a(href='#') Cочи
+                li.item(style='display:none')
+                    a(href='#') Новгород
+                li.item(style='display:none')
+                    a(href='#') Москва
+                li.item(style='display:none')
+                    a(href='#') Самара
+                li.item(style='display:none')
+                    a(href='#') Санкт-Петербург
+        .col-md-9.filter
+            button Cклад
+            button Магазин
+            button Все объекты
+    .col-md-3.col-sm-12.col-xs-12.shop_list
+        ul.list-unstyled
+            li
+                .name-of-list Склад в Нижнем Новгороде
+                .descr
+                    | Нижний Новгород, ул. Москвичкина, до. 88
+                    br
+                    | тел. +7 (8888) 888-88-88
+                    br
+                    | 10:00-17:00
+            li
+                .name-of-list Склад в Самаре
+                .descr
+                    | Самара, ул. Пограничника, до. 8
+                    br
+                    | тел. +7 (495) 888-88-88
+                    br
+                    | 10:00-18:00
+            li
+                .name-of-list Склад в Самаре
+                .descr
+                    | Самара, ул. Пограничника, до. 8
+                    br
+                    | тел. +7 (495) 888-88-88
+                    br
+                    | 10:00-18:00
+            li
+                .name-of-list Склад в Самаре
+                .descr
+                    | Самара, ул. Пограничника, до. 8
+                    br
+                    | тел. +7 (495) 888-88-88
+                    br
+                    | 10:00-18:00
+            li
+                .name-of-list Склад в Самаре
+                .descr
+                    | Самара, ул. Пограничника, до. 8
+                    br
+                    | тел. +7 (495) 888-88-88
+                    br
+                    | 10:00-18:00
+            li
+                .name-of-list Склад в Самаре
+                .descr
+                    | Самара, ул. Пограничника, до. 8
+                    br
+                    | тел. +7 (495) 888-88-88
+                    br
+                    | 10:00-18:00
+    .col-md-9.col-sm-12.col-xs-12
+        .map
+            #map(style='width: 100%; height: 350px')

@@ -1,11 +1,10 @@
 doctype html
-html
+html(lang='ru')
     head
         block title
             title Internet magazine
             meta(charset='utf-8')
             meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-            meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
         block styles
             link(href='css/style.css' rel='stylesheet')
             link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600italic' rel='stylesheet')
@@ -14,6 +13,7 @@ html
             link(href='libraries/owl.carousel/owl-carousel/owl.carousel.css' rel='stylesheet')
             link(href='libraries/owl.carousel/owl-carousel/owl.theme.css' rel='stylesheet')
             link(href='libraries/owl.carousel/owl-carousel/owl.transitions.css' rel='stylesheet')
+            script(src='https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU')
 
     body
         block content
@@ -22,4 +22,5 @@ html
         script(src='libraries/bootstrap/dist/js/bootstrap.min.js')
         script(src='libraries/owl.carousel/owl-carousel/owl.carousel.min.js')
         script(src='js/carosel.js')
-        script(src='https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU')
+
+
